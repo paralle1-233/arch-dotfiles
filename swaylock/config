@@ -1,0 +1,11 @@
+screenshots
+clock
+indicator
+indicator-radius=200
+indicator-thickness=15
+effect-blur=10x5
+
+fade-in=2
+grace=20
+ignore-empty-password
+show-failed-attempts

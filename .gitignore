@@ -1,0 +1,24 @@
+# Secrets / credentials
+*.secret
+*.token
+*.key
+.env
+.env.*
+
+# Runtime state
+**/.local/state/
+**/cache/
+**/caches/
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*~
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
