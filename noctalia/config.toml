@@ -1,0 +1,104 @@
+[backdrop]
+enabled = true
+
+[bar]
+order = [ "mybar" ]
+
+    [bar.mybar]
+    background_opacity = 0.24999999441206455
+    capsule = true
+    capsule_foreground = "on_surface_variant"
+    capsule_opacity = 0.69999998435378075
+    capsule_padding = 10.0
+    capsule_thickness = 0.85999998450279236
+    center = [ "media" ]
+    end = [ "tray", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
+    start = [ "workspaces", "notifications", "wallpaper", "clipboard", "clock" ]
+
+[location]
+auto_locate = true
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 915.0
+    cy = 961.0
+    output = "eDP-1"
+    placement_height = 1143.0
+    placement_width = 1829.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[shell]
+avatar_path = "/home/parallel/Downloads/witchhare.png"
+niri_overview_type_to_launch_enabled = true
+telemetry_enabled = true
+
+    [shell.panel]
+    transparency_mode = "glass"
+
+    [shell.screen_corners]
+    enabled = true
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "vibrant"
+
+    [theme.templates]
+    builtin_ids = [ "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
+    community_ids = [ "codex", "opencode", "spicetify", "steam", "fuzzel", "fastfetch", "fcitx5", "fzf", "yazi" ]
+
+[wallpaper]
+directory = "/home/parallel/Pictures/wallpapers"
+transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
+
+    [wallpaper.automation]
+    enabled = true
+
+    [wallpaper.default]
+    path = "/home/parallel/Pictures/wallpapers/yuuka.png"
+
+    [wallpaper.last]
+    path = "/home/parallel/Pictures/wallpapers/yuuka.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/parallel/Pictures/wallpapers/yuuka.png"
+
+[widget.clock]
+format = "{:%H:%M:%S}"
+
+[widget.media]
+anchor = true
+hide_when_no_media = true
+max_length = 325
+min_length = 140
+show_progress = true
